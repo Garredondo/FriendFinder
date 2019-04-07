@@ -1,3 +1,6 @@
+.jumbotron {
+    background-color: aliceblue;
+}
 
 @media screen and (max-width: 750px) {
     .form-control{

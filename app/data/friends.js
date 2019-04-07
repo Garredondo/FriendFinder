@@ -16,6 +16,22 @@ var savedFriends = [
             3,
             4
         ]
+    },
+    {
+        "name": "Brandon",
+        "photo": "https://media.licdn.com/dms/image/C4E03AQG85hgVNJCdKg/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=NaokkWiV-dhUNtfAO3ey64oDvDEtW26isLulm6Omp8M",
+        "scores": [
+            "4",
+            "1 (Strongly Diagree)",
+            "5 (Strongly Agree)",
+            "3",
+            "3",
+            "3",
+            "2",
+            "3",
+            "2",
+            "3"
+        ]
     }
 ];
 
