@@ -16,24 +16,7 @@ var savedFriends = [
             3,
             4
         ]
-    },
-    {
-        "name": "",
-        "photo": "",
-        "scores": [
-            4,
-            2,
-            5,
-            5,
-            4,
-            5,
-            3,
-            5,
-            3,
-            4
-        ]
     }
-
 ];
 
 // exporting to api routes
