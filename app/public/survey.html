@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FriendFinder Survey</title>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-sm-1">
+                <!-- intentionally left blank -->
+            </div>
+            <div class="col-sm-10">
+                <h1>Survey Questions</h1>
+                <div style="padding: 10px"></div>
+                <h5>About You</h5>
+                <div style="padding: 5px"></div>
+                <h5>Name (Required)</h5>
+                <input class="form-control" id="name" type="text" placeholder="Name">
+                <h5>Photo (Required)</h5>
+                <input class="form-control" id="photo" type="text" placeholder="Link your photo">
+            </div>
+            <div class="col-sm-1">
+                <!-- intentionally left blank -->
+            </div>
+            <div style="padding: 20px"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1">
+                <!-- intentionally left blank -->
+            </div>
+            <div class="col-sm-10">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">1) I am easy going.</label>
+                    <select class="form-control" id="q-one">
+                        <option>1 (Strongly Diagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">2) Music festivals are my jam.</label>
+                    <select class="form-control" id="q-two">
+                        <option>1 (Strongly Diagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">3) Going out for a fancy meal is money well spent.</label>
+                    <select class="form-control" id="q-three">
+                        <option>1 (Strongly Diagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">4) I enjoy solving complex problems.</label>
+                    <select class="form-control" id="q-four">
+                        <option>1 (Strongly Diagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">5) I have a vivid imagination.</label>
+                    <select class="form-control" id="q-five">
+                        <option>1 (Strongly Diagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">6) I love undertaking new challenges.</label>
+                    <select class="form-control" id="q-six">
+                        <option>1 (Strongly Diagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">7) A crowded bar on a friday night is my idea of good time.</label>
+                    <select class="form-control" id="q-seven">
+                        <option>1 (Strongly Diagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">8) I am very organized.</label>
+                    <select class="form-control" id="q-eight">
+                        <option>1 (Strongly Diagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">9) Hiking is a great way to spend a saturday morning.</label>
+                    <select class="form-control" id="q-nine">
+                        <option>1 (Strongly Diagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">10) I am often in a great mood.</label>
+                    <select class="form-control" id="q-ten">
+                        <option>1 (Strongly Diagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div style="padding: 8px">
+                    <button type="button" class="btn btn-primary" id="submit">Find My Friend!</button>
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <!-- intentionally left blank -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1">
+                <!-- intentionally left blank -->
+            </div>
+            <div class="col-sm-10">
+                <div style="padding: 5px">
+                    <a href="/api/friends">API Friend List | </a> <button><i class="fab fa-github"></i></button>
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <!-- intentionally left blank -->
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+
+    <div class="modal fade" id="user-match" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Meet Your Friend!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="friend-match-name"></h3>
+                    <img src="" id="friend-match-photo" alt="New Friend" width="150px" height="150px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js for click handlers -->
+    <script type="text/javascript">
+        // clear form
+        $(".form-control").val("");
+
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            function formComplete() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+
+                $("#name").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                $("#photo").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+
+
+            }
+
+            if (formComplete()) {
+                var newFriend = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [
+                        $("#q-one").val(),
+                        $("#q-two").val(),
+                        $("#q-three").val(),
+                        $("#q-four").val(),
+                        $("#q-five").val(),
+                        $("#q-six").val(),
+                        $("#q-seven").val(),
+                        $("#q-eight").val(),
+                        $("#q-nine").val(),
+                        $("#q-ten").val()
+                    ]
+                };
+
+                // ajax post to the friends api
+                $.post("/api/friends", newFriend, function (data) {
+                    $("#friend-match-name").text(data.name);
+                    $("#friend-match-photo").attr("src", data.photo);
+
+                    $("#user-match").modal("toggle");
+                });
+
+            } else {
+                alert("Please complete all fields before submission!");
+            }
+
+            // clear form
+            $(".form-control").val("");
+
+        });
+
+    </script>
+</body>
+
+</html>
