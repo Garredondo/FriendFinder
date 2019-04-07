@@ -7,10 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FriendFinder Survey</title>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script> -->
-
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
@@ -25,6 +21,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
 </head>
 
 <body>
@@ -121,7 +118,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">7) A crowded bar on a friday night is my idea of good time.</label>
+                    <label for="exampleFormControlSelect1">7) A crowded bar on a friday night is my idea of good
+                        time.</label>
                     <select class="form-control" id="q-seven">
                         <option>1 (Strongly Diagree)</option>
                         <option>2</option>
@@ -178,7 +176,8 @@
             </div>
             <div class="col-sm-10">
                 <div style="padding: 5px">
-                    <a href="/api/friends">API Friend List | </a> <a href="https://github.com/Garredondo/FriendFinder" target="_blank"><button><i class="fab fa-github"></i></button></a>
+                    <a href="/api/friends">API Friend List | </a> <a href="https://github.com/Garredondo/FriendFinder"
+                        target="_blank"><button><i class="fab fa-github"></i></button></a>
                 </div>
             </div>
             <div class="col-sm-1">
@@ -187,7 +186,7 @@
         </div>
     </div>
 
-    <!-- modal -->
+    <!-- match modal -->
 
     <div class="modal fade" id="user-match" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
@@ -202,6 +201,27 @@
                 <div class="modal-body">
                     <h3 id="friend-match-name"></h3>
                     <img src="" id="friend-match-photo" alt="New Friend" width="150px" height="150px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- complete form modal -->
+
+    <div class="modal fade" id="complete-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 style="color: red">Please complete form before submitting.</h3>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -268,7 +288,7 @@
                 });
 
             } else {
-                alert("Please complete all fields before submission!");
+                $("#complete-form").modal("toggle");
             }
 
             // clear form

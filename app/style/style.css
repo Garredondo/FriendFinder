@@ -1,0 +1,7 @@
+
+@media screen and (max-width: 750px) {
+    .form-control{
+        width: 350px;
+        margin: 0px auto;
+    }
+  }
